@@ -2,8 +2,10 @@ function FindProxyForURL(url, host) {
 
     //*. List of allowed URLs
     var allowed = [
-	    "http://*.hypernylium.com/*",
-        "https://*.hypernylium.com/*",
+	"http://*.githubusercontent.com/*",
+        "https://*.githubusercontent.com/*",
+	"http://*.github.com/*",
+        "https://*.github.com/*",
         "http://*.spotpos.com/*",
         "https://*.spotpos.com/*",
         "http://*.xplortechnologies.com/*",
