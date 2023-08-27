@@ -39,6 +39,6 @@ function FindProxyForURL(url, host) {
         }
     }
 
-    return "PROXY proxy1:8080; DIRECT";
+    return "PROXY NOACCESS:9999";
 }
 
