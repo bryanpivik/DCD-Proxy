@@ -1,8 +1,6 @@
 function FindroxyForURL(url, host) {
-    if (isPlainHostName(host))
-        return "DIRECT";
 
-	var allowed = [
+    var allowed = [
         "*githubusercontent.com/*",
         "*github.com/*",
         "*spotpos.com/*",
@@ -33,7 +31,7 @@ function FindroxyForURL(url, host) {
         "*usertrust.co/*m"
     ];
 
-	for (var i = 0; i < allowed.length; i++) {
+    for (var i = 0; i < allowed.length; i++) {
         if (shExpMatch(url, allowed[i])) {
             return "DIRECT";
         }
