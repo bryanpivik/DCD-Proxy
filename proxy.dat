@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-	var allowed = [
+    var allowed = [
         "githubusercontent.com",
         "github.com",
         "spotpos.com",
@@ -30,7 +30,7 @@ function FindProxyForURL(url, host) {
         "usertrust.co"
     ];
 
-	for (var i = 0; i < allowed.length; i++) {
+    for (var i = 0; i < allowed.length; i++) {
         if (shExpMatch(host, allowed[i])) {
             return "DIRECT";
         }
