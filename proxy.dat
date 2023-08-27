@@ -1,5 +1,6 @@
 function FindProxyForURL(url, host) {
     var allowed = [
+        "githubassets.com",
         "githubusercontent.com",
         "github.com",
         "spotpos.com",
